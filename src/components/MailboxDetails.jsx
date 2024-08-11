@@ -11,10 +11,12 @@ const MailboxDetails = (props) => {
 
     return (
         <>
-            <h2>Mailbox Details</h2>
+            <h2 className='detialsHead'>Mailbox Details</h2>
+            <div className='detials'>
             <p>Email: {singleMail.email}</p>
             <p>Subject: {singleMail.subject}</p>
             <p>Message: {singleMail.message}</p>
+            </div>
         </>
     );
 };

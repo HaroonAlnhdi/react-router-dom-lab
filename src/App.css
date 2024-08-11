@@ -87,3 +87,25 @@
   color: #666;
   cursor: not-allowed;
 }
+
+.detials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  border: #eab420 2px solid;
+ /* width: 50vw; */
+  padding: 1em;
+  border-radius: 5px;
+  
+}
+
+.detials h2{
+  color: #eab420;
+}
+
+.detials p{
+  color: black;
+font-weight: 700;
+}

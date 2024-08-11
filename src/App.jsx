@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import NavBar from './components/NavBar';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import MailboxForm from './components/MailboxForm';
 import MailboxList from './components/MailboxList';
@@ -17,7 +17,7 @@ const App = () => {
     setMailboxes([...mailboxes, newMailbox]);
   };
   return ( 
-  <>
+    <>
     <NavBar />
     <Routes>
       <Route path='/' element={<main><h1>Post Office</h1></main>} />
@@ -25,7 +25,6 @@ const App = () => {
       <Route path='mailboxes/:mailboxId' element={<MailboxDetail />} />
       <Route path='new-mailbox' element={<MailboxForm  addBox={addBox}/>} />
     </Routes>
-
     </>
   )
 };

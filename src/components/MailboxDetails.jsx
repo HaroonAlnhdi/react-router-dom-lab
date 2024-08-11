@@ -1,3 +1,5 @@
+
+
 const MailboxDetails = () => {
   const { id } = useParams();
   const mailbox = useMailbox(id);
@@ -7,10 +9,12 @@ const MailboxDetails = () => {
   }
 
   return (
-    <div>
-      <h1>{mailbox.name}</h1>
-      <p>{mailbox.description}</p>
-    </div>
+    <main>
+      <h2>Mailbox Details</h2>
+      <p>Email: {mailbox.email}</p>
+      <p>Subject: {mailbox.subject}</p>
+      <p>Message: {mailbox.message}</p>
+    </main>
   );
 }
 

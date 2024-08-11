@@ -9,11 +9,7 @@ import MailboxDetail from './components/MailboxDetails';
 
 import './App.css';
 
-// const initialState = {
-//   email: '',
-//   subject: '',
-//   message: '',
-// }
+
 
 const App = () => {
   const [mailboxes, setMailboxes] = useState([]);

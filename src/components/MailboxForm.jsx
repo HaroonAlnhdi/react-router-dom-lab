@@ -26,7 +26,7 @@ const MailboxForm = (props) => {
   return (
     <main>
       <h2>New Mailbox</h2>
-      <form onSubmit={hadleSubmit}>
+      <form onSubmit={hadleSubmit} className='formStyle' >
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
         <label htmlFor="subject">Subject:</label>

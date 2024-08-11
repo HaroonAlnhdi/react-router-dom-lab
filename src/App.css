@@ -40,3 +40,50 @@
 .read-the-docs {
   color: #888;
 }
+
+.formStyle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.formStyle input{
+  width: 60%;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formStyle textarea{
+  width: 60%;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formStyle button{
+  width: 60%;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #eab420;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formStyle button:hover{
+  background-color: #f0c14b;
+}
+
+.formStyle button:disabled{
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}

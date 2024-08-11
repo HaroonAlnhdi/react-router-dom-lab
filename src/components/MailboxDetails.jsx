@@ -13,7 +13,7 @@ const MailboxDetails = (props) => {
         <>
             <h2 className='detialsHead'>Mailbox Details</h2>
             <div className='detials'>
-            <p>Email: {singleMail.email}</p>
+            <p> From Email: <span>{singleMail.email}</span></p>
             <p>Subject: {singleMail.subject}</p>
             <p>Message: {singleMail.message}</p>
             </div>

@@ -31,7 +31,7 @@ const MailboxForm = (props) => {
         <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required />
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" value={formData.message} onChange={handleChange} required />
-        <button type="submit">Create</button>
+        <button type="submit">Send</button>
       </form>
 
     </main>

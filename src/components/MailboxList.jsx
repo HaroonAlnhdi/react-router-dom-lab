@@ -1,11 +1,18 @@
-const MailboxList = () => {
+import { Link } from "react-router-dom";
+
+const MailboxList = (props) => {
   const mailboxes = useMailboxes();
   return (
-    <ul>
-      {mailboxes.map((mailbox) => (
-        <li key={mailbox.id}>{mailbox.name}</li>
-      ))}
-    </ul>
+    <main>
+      <h2>Mailboxes</h2>
+      <ul>
+        {mailboxes.map(mailbox => (
+          <li key={mailbox.id}>
+            <Link to={`/mailboxes/${mailbox.id}`}>{mailbox.email}</Link>
+          </li>
+        ))}
+      </ul>
+    </main>
   );
 }
 
